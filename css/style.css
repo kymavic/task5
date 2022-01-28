@@ -196,12 +196,13 @@ padding-bottom: 30px;
 
 /*contact page*/
 .contact {
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 .container .contact-content {
     display: flex;
@@ -210,14 +211,17 @@ padding-bottom: 30px;
     align-items: center;
     justify-content: space-between;*/
     padding: 25px 20px;
+    border:rgb(148, 148, 148) solid 2px;
 
 }
 .contact-content form {
     width: 47%;
     padding-left: 43px;
-    padding-bottom: 51px;
+    padding-bottom: 33px;
    /* padding-top: 125PX;*/
    margin: auto;
+  
+   
 }
 .container .input-box {
     height: 50px;
