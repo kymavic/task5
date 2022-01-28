@@ -285,7 +285,7 @@ padding-bottom: 30px;
 .container .message-box label {
     position: absolute;
     font-size: 16px;
-    color: rgb(5, 41, 21);
+    color: rgb(15, 15, 48);
     left: 18px;
     top: 6px;
     pointer-events: none;
@@ -302,7 +302,7 @@ padding-bottom: 30px;
 
 .container .input-box input[type="submit"]{
     color:#fff;
-    background: #ACD7F3;
+    background: #949494;
     padding-left: 0;
     font-size: 18px;
     font-weight: 500;
@@ -311,7 +311,7 @@ padding-bottom: 30px;
     transition: all 0.3s ease;
 }
 .content-contact .input-box input[type="submit"]:hover{
-    background: whitesmoke;
+    background: #ACD7F3;
     color: #d1eee2;
 }
 
