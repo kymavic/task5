@@ -6,7 +6,7 @@
 }
 
 .container {
-    padding: 60px 0;
+    padding: 40px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -17,7 +17,7 @@
     color:  rgb(53, 51, 50);
     font-size: 30px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 /*header*/
@@ -51,6 +51,7 @@ nav>a {
 nav>a:hover {
     text-decoration: underline;
 }
+
 
 header .main-header {
     display: flex;
@@ -89,6 +90,8 @@ justify-content: space-evenly;
 .img-do{
     width: 48%;
 }
+
+
 .container .get-involved{
     background: whitesmoke;
 }
@@ -189,6 +192,127 @@ padding-bottom: 30px;
 .Activity-prin p{
    font-weight: 300;
    text-align: center; 
+}
+
+/*contact page*/
+.contact {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container .contact-content {
+    display: flex;
+    align-items: end;
+    /*
+    align-items: center;
+    justify-content: space-between;*/
+    padding: 25px 20px;
+
+}
+.contact-content form {
+    width: 47%;
+    padding-left: 43px;
+    padding-bottom: 51px;
+   /* padding-top: 125PX;*/
+   margin: auto;
+}
+.container .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+.container .input-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    border: 2px solid transparent;
+    background-color: whitesmoke;
+    transition: all 0.3s ease;
+}
+.container .input-box input:focus,
+.container .input-box input:valid {
+    background-color: #fff;
+    border-color: rgb(53, 51, 50);
+    ;
+
+}
+.container .input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: rgb(5, 41, 21);
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+.container .input-box input:focus~label,
+.container .input-box input:valid~label {
+    top: 0;
+    left: 12px;
+    display: 12px;
+    color: rgb(53, 51, 50);
+    background: #fff;
+}
+.container .message-box {
+    min-height: 100px;
+    position: relative;
+}
+.container .message-box textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: whitesmoke;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    resize: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.container .message-box textarea:focus {
+    border-color: rgb(53, 51, 50);
+    background: #fff;
+}
+
+.container .message-box label {
+    position: absolute;
+    font-size: 16px;
+    color: rgb(5, 41, 21);
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+.container .message-box textarea:focus ~ label {
+    left: 12px;
+    top: -10px;
+    color: rgb(53, 51, 50);
+    font-size: 14px;
+    background: #fff;
+}
+
+.container .input-box input[type="submit"]{
+    color:#fff;
+    background: #ACD7F3;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.content-contact .input-box input[type="submit"]:hover{
+    background: whitesmoke;
+    color: #d1eee2;
 }
 
 /*Footer*/
@@ -298,40 +422,40 @@ footer p {
     color: whitesmoke;
 }
 
-.contact {
+.footer-contact {
     width: calc(35% -60px);
     margin-right: 0;
 }
 
-.contact .info {
+.footer-contact .info {
     position: relative;
 }
 
-.contact .info li {
+.footer-contact .info li {
     display: flex;
     margin-bottom: 16X;
 }
 
-.contact .info li span:nth-child(1) {
+.footer-contact .info li span:nth-child(1) {
     color: #ffff;
     font-size: 20px;
 
 }
 
-.contact .info li span {
+.footer-contact .info li span {
     color: rgb(53, 51, 50);
 }
 
-.contact .info li a {
+.footer-contact .info li a {
     color: rgb(53, 51, 50);
     text-decoration: none;
 }
 
-.contact .info li a :hover {
+.footer-contact .info li a :hover {
     color: #fff;
 }
 
-.contact .info li .fa {
+.footer-contact .info li .fa {
     margin-top: 10px;
     margin-right: 5px;
 }
@@ -350,6 +474,12 @@ footer p {
 header{
     background-position: center;
 }
+
+.menu-btn {
+    display: block;
+}
+
+
 .main-objetive{
     flex-direction: column;
     justify-content: center;
@@ -380,6 +510,13 @@ header{
 .Activity-prin img{
     width: 90%;
 }
+
+/*contact*/
+.contact-content form{
+    width: 100%;
+    margin-right:30px ;
+}
+
 
 /*footer*/
     footer {
@@ -433,7 +570,10 @@ header{
     .img-frame{
         width: 95%;
     }
-  
+    .contact-content form{
+        width: 90%;
+        margin-right:20px ;
+    }
 
 
 }
